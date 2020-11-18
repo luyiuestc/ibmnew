@@ -11,6 +11,10 @@ BLUE=""
 RED=""
 END="==================================="
 
+echo "IBM_ACCOUNT=${IBM_ACCOUNT}"
+echo "IBM_APP_NAME=${IBM_APP_NAME}"
+echo "IBM_MEMORY=${IBM_MEMORY}"
+
 if [ ! -f "$IBMCLOUD" ]; then
     echo "${BLUE}download ibm-cloud-cli-release${END}"
     ver=$(curl -s https://github.com/IBM-Cloud/ibm-cloud-cli-release/releases/latest | grep -Po "(\d+\.){2}\d+")

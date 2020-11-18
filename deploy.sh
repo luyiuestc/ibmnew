@@ -11,9 +11,12 @@ BLUE=""
 RED=""
 END="==================================="
 
-echo "IBM_ACCOUNT=${IBM_ACCOUNT}"
-echo "IBM_APP_NAME=${IBM_APP_NAME}"
-echo "IBM_MEMORY=${IBM_MEMORY}"
+account = $IBM_ACCOUNT
+app=$IBM_APP_NAME
+memory=$IBM_MEMORY
+echo $account
+echo $app
+echo $memory
 
 if [ ! -f "$IBMCLOUD" ]; then
     echo "${BLUE}download ibm-cloud-cli-release${END}"
